@@ -46,11 +46,11 @@ jobs:
         git config --global user.name 'github-actions[bot]'
         git config --global user.email '88293801+lizclipse@users.noreply.github.com'
         let version = $"v($env.version)"
-        let tagged = (git tag -l | lines -s | find $version | is-empty)
-        if not $tagged {
+        let untagged = (git tag -l | lines -s | find $version | is-empty)
+        if $untagged {
           print $"pushing tag ($version)"
         }
-        $"created-tag=(not $tagged)(char nl)" out>> $env.GITHUB_OUTPUT
+        $"created-tag=($untagged)(char nl)" out>> $env.GITHUB_OUTPUT
 
     - name: test
       env:
