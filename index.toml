@@ -658,6 +658,10 @@ hash = "ef8b4c780a1410f45321a8f708c37a818a01ca0b576f0621e174899eb31e3853"
 metafile = true
 
 [[files]]
+file = "resourcepacks/l3/assets/minecraft/sounds.json"
+hash = "ff740199b79d0467dc5c82072b90537840fb5ca7ee36107eeb4c6774aa599349"
+
+[[files]]
 file = "resourcepacks/l3/assets/minecraft/sounds/random/drink.ogg"
 hash = "d2d89b18b93e90ae82f876c295375fecd4c119424f06f0ef511bb4fa00df9e82"
 
