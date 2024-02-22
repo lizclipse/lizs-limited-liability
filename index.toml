@@ -2,11 +2,15 @@ hash-format = "sha256"
 
 [[files]]
 file = "README.md"
-hash = "8bef631d7b47e02f8293760a7657b9ff7762daab171a664a85361e4c6e42e627"
+hash = "b5ba46cfee2a11ac241693834c0d84acc14a92b41a0a2116190fadc3742a24a2"
 
 [[files]]
 file = "config/quilt-loader-overrides.json"
 hash = "8f8f44aeda00ce3f85c19847b704b64fc9c924fef9b9efa7af5ed2fd5c2db495"
+
+[[files]]
+file = "config/resourcepackoverrides.json"
+hash = "cea4bdcb6aa6b5c9bf0c1ed4e291e045272bb8e06dde98b29ca32b577e6c3a51"
 
 [[files]]
 file = "mods/3dskinlayers.pw.toml"
@@ -494,6 +498,11 @@ hash = "e3c5ac18e412aae7a638a2c22aff5f16e5de5c4ec368c08b011703cf44c58d84"
 metafile = true
 
 [[files]]
+file = "mods/resource-pack-overrides.pw.toml"
+hash = "7014242c0a3b2a5982767fd5b2be75e963a0811170a0123f7f423b6afac17361"
+metafile = true
+
+[[files]]
 file = "mods/resourceful-config.pw.toml"
 hash = "4d4bcf62b73bcc53dbb6d9edfe0ed84b4ad9c267a37807c0c653486add6f89a8"
 metafile = true
@@ -646,4 +655,9 @@ metafile = true
 [[files]]
 file = "resourcepacks/fast-better-grass.pw.toml"
 hash = "ef8b4c780a1410f45321a8f708c37a818a01ca0b576f0621e174899eb31e3853"
+metafile = true
+
+[[files]]
+file = "resourcepacks/sparkles.pw.toml"
+hash = "9fb46a8dd6c7300b9918d3936eeb7c395d3e6f1ebcef844cd00584f02f5a5300"
 metafile = true

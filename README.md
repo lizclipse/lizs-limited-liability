@@ -101,6 +101,7 @@ For a complete list of mods, see the [source](https://github.com/lizclipse/lizs-
 - [Leave My Bars Alone](https://modrinth.com/mod/gK9mebQg)
 - [Scaffolding Drops Nearby](https://modrinth.com/mod/uO522mgw)
 - [Shulker Box Tooltip](https://modrinth.com/mod/2M01OLQq)
+- [Sparkles: Stardust Labs Resourcepack](https://modrinth.com/mod/HfNmMQ9E)
 
 ### Utility
 
