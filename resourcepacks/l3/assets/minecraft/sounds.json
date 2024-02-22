@@ -1,0 +1,10 @@
+{
+  "entity.generic.drink": {
+    "replace": true,
+    "sounds": [
+      {
+        "name": "random/drink"
+      }
+    ]
+  }
+}
