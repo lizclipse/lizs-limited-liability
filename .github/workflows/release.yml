@@ -46,7 +46,7 @@ jobs:
         git config --global user.name 'github-actions[bot]'
         git config --global user.email '88293801+lizclipse@users.noreply.github.com'
         let version = $"v($env.version)"
-        let tagged = (git -l | lines -s | find $version | is-empty)
+        let tagged = (git tag -l | lines -s | find $version | is-empty)
         if not $tagged {
           print $"pushing tag ($version)"
         }
