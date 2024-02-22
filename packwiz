@@ -33,7 +33,7 @@ def os [] {
     },
     _ => {
       error make {
-        msg: "Unknown arch"
+        msg: "Unknown os"
       }
     }
   }

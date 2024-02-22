@@ -17,9 +17,19 @@ most of this is TODO
 
 - TODO
 
+### Enhancements
+
+- TODO
+
 ### Tweaks
 
 - TODO
+
+### Notes
+
+Some dependency overrides are included because there's some weirdness with mismatched casing
+and incomplete metadata.
+Each one is tested to make sure it's just a surface-level issue.
 
 ## Server
 
@@ -41,7 +51,8 @@ services:
     environment:
       - "EULA=true"
       - "TYPE=quilt"
-      - "PACKWIZ_URL=http://192.168.0.200:8000/pack.toml"
+      # TODO: use a specific tag
+      - "PACKWIZ_URL=https://github.com/lizclipse/lizs-limited-liability/raw/master/pack.toml"
       - "VERSION=1.20.1"
       - "MAX_MEMORY=5G"
     volumes:
@@ -51,17 +62,12 @@ services:
 
 ### Dynmap support
 
-Env:
-
-```yml
-environment:
-  # Needed to fix an incompatability with dynmap & quilt
-  - JVM_DD_OPTS=loader.workaround.jar_copy_all_mods=true
-```
-
-Port:
+For Dynmap to work, the compose will need a couple of additions:
 
 ```yml
 ports:
   - "8123:8123"
+environment:
+  # Needed to fix an incompatability with dynmap & quilt
+  - "JVM_DD_OPTS=loader.workaround.jar_copy_all_mods=true"
 ```

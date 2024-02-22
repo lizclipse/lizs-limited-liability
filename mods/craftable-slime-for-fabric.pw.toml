@@ -1,0 +1,13 @@
+name = "Craftable Slime for Fabric"
+filename = "slime-1.1.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/bCPTPnsM/versions/SvclEW8C/slime-1.1.jar"
+hash-format = "sha1"
+hash = "7a21a9ac6bc1bab778bc9f47dc527d1b1bf8b3fe"
+
+[update]
+[update.modrinth]
+mod-id = "bCPTPnsM"
+version = "SvclEW8C"

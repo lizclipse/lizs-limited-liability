@@ -24,18 +24,6 @@
         }
       ],
       "breaks": []
-    },
-    {
-      "path": "<mods>/Dynmap-3.7-beta-4-fabric-1.20.4.jar",
-      "depends": [
-        {
-          "remove": {
-            "id": "minecraft",
-            "versions": "*"
-          }
-        }
-      ],
-      "breaks": []
     }
   ]
 }
