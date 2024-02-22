@@ -1,0 +1,49 @@
+#!/usr/bin/env nu -l
+
+export def --wrapped main [...args] {
+  ^$"./vendor/packwiz/packwiz-(os)-64-(arch)(ext)" ...$args
+}
+
+def arch [] {
+  match $nu.os-info.arch {
+    "aarch64" => {
+      "arm"
+    },
+    "x86_64" => {
+      "amd"
+    },
+    _ => {
+      error make {
+        msg: "Unknown arch"
+      }
+    }
+  }
+}
+
+def os [] {
+  match $nu.os-info.name {
+    "macos" => {
+      "mac"
+    },
+    "linux" => {
+      "linux"
+    },
+    "windows" => {
+      "windows"
+    },
+    _ => {
+      error make {
+        msg: "Unknown arch"
+      }
+    }
+  }
+}
+
+def ext [] {
+  match $nu.os-info.name {
+    "windows" => {
+      ".exe"
+    },
+    _ => ""
+  }
+}

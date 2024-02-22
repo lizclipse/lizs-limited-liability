@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "overrides": [
+    {
+      "path": "<mods>/bettercombat-fabric-1.8.4+1.20.1.jar",
+      "depends": [
+        {
+          "remove": {
+            "id": "player-animator",
+            "versions": "*"
+          }
+        }
+      ],
+      "breaks": []
+    }
+  ]
+}
