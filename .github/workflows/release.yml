@@ -56,3 +56,9 @@ jobs:
           print "version already tagged"
         }
         $"created-tag=($untagged)(char nl)" out>> $env.GITHUB_OUTPUT
+
+    - uses: softprops/action-gh-release@v1
+      if: ${{ steps.autotag.outputs.created-tag == 'true' }}
+      with:
+        files: '*.mrpack'
+        tag_name: ${{ steps.pack.outputs.version }}
