@@ -22,7 +22,7 @@ For a complete list of mods, see the [source](https://github.com/lizclipse/lizs-
 - [Better Combat](https://modrinth.com/mod/5sy6g3kz)
 - [CC: Tweaked](https://modrinth.com/mod/gu7yAYhd)
   - [CC:C Bridge](https://modrinth.com/mod/fXt291FO)
-- [Create Fabric Sodium Fix](https://modrinth.com/mod/ysHf2zCJ)
+- [Create Fabric](https://modrinth.com/mod/Xbc0uyRg)
   - [Create Deco](https://modrinth.com/mod/sMvUb4Rb)
   - [Create: Steam 'n' Rails](https://modrinth.com/mod/ZzjhlDgM)
   - [Create: Structures](https://modrinth.com/mod/IAnP4np7)
