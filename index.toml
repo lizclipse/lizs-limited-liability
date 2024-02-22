@@ -10,7 +10,7 @@ hash = "8f8f44aeda00ce3f85c19847b704b64fc9c924fef9b9efa7af5ed2fd5c2db495"
 
 [[files]]
 file = "config/resourcepackoverrides.json"
-hash = "cea4bdcb6aa6b5c9bf0c1ed4e291e045272bb8e06dde98b29ca32b577e6c3a51"
+hash = "77a76faf86cd64b33e70bb5d4943978981babdd4480db89ea920dbcb7b7497fd"
 
 [[files]]
 file = "mods/3dskinlayers.pw.toml"
@@ -656,6 +656,14 @@ metafile = true
 file = "resourcepacks/fast-better-grass.pw.toml"
 hash = "ef8b4c780a1410f45321a8f708c37a818a01ca0b576f0621e174899eb31e3853"
 metafile = true
+
+[[files]]
+file = "resourcepacks/l3/assets/minecraft/sounds/random/drink.ogg"
+hash = "d2d89b18b93e90ae82f876c295375fecd4c119424f06f0ef511bb4fa00df9e82"
+
+[[files]]
+file = "resourcepacks/l3/pack.mcmeta"
+hash = "48ecae4345fb12f5f4341ecef06601fe255c1aea17a3bee7b1b2dc17c62b26e7"
 
 [[files]]
 file = "resourcepacks/sparkles.pw.toml"
