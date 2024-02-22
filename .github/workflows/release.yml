@@ -43,17 +43,16 @@ jobs:
       env:
         version: ${{ steps.pack.outputs.version }}
       run: |
-        git config --global user.name 'github-actions[bot]'
-        git config --global user.email '88293801+lizclipse@users.noreply.github.com'
         let version = $"v($env.version)"
         let untagged = (git tag -l | lines -s | find $version | is-empty)
         if $untagged {
           print $"pushing tag ($version)"
+
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email '88293801+lizclipse@users.noreply.github.com'
+          git tag $version
+          git push origin $version
+        } else {
+          print "version already tagged"
         }
         $"created-tag=($untagged)(char nl)" out>> $env.GITHUB_OUTPUT
-
-    - name: test
-      env:
-        created-tag: ${{ steps.autotag.outputs.created-tag }}
-      run: |
-        print $"tagged: ($env.created-tag)"
