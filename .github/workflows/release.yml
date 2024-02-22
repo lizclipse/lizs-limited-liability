@@ -32,7 +32,7 @@ jobs:
       with:
         fail-if-changed: true
 
-    - uses: butlerlogic/action-autotag@stable
+    - uses: butlerlogic/action-autotag@1.1.2
       env:
         GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
       with:
