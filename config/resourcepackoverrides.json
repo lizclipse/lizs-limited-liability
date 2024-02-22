@@ -2,13 +2,13 @@
   "schema_version": 2,
   "failed_reloads_per_session": 5,
   "default_packs": [
-    "file/Sparkles_1.20.4_v1.0.5.zip",
+    "vanilla",
+    "black_icons",
     "continuity/default",
     "continuity/glass_pane_culling_fix",
-    "black_icons",
     "presencefootsteps/default_sound_pack",
     "minecraft/supporteatinganimation",
-    "vanilla",
+    "file/Sparkles_1.20.4_v1.0.5.zip",
     "file/Fast Better Grass.zip"
   ]
 }
