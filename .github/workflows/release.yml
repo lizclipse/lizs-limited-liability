@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - master
+defaults:
+  run:
+    shell: nu {0}
 
 jobs:
   build:
@@ -12,8 +15,17 @@ jobs:
     - uses: actions/checkout@v3
     - uses: hustcer/setup-nu@v3.9
 
-    - run: |
+    - id: pack
+      run: |
         ./packwiz refresh
+        ./packwiz modrinth export
+        $"mc-version=(open ./pack.toml | get versions.minecraft)(char nl)" out>> $env.GITHUB_OUTPUT
+
+    - name: test
+      env:
+        SELECTED_COLOR: ${{ steps.pack.outputs.mc-version }}
+      run: |
+        print $"The selected color is $($env.SELECTED_COLOR)"
 
     - uses: tj-actions/verify-changed-files@v18
       with:
