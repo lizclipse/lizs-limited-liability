@@ -15,17 +15,18 @@ jobs:
     - uses: actions/checkout@v3
     - uses: hustcer/setup-nu@v3.9
 
-    - id: pack
+    - name: pack
+      id: pack
       run: |
         ./packwiz refresh
         ./packwiz modrinth export
         $"mc-version=(open ./pack.toml | get versions.minecraft)(char nl)" out>> $env.GITHUB_OUTPUT
 
-    - name: test
+    - name: output
       env:
-        SELECTED_COLOR: ${{ steps.pack.outputs.mc-version }}
+        MC_VERSION: ${{ steps.pack.outputs.mc-version }}
       run: |
-        print $"The selected color is $($env.SELECTED_COLOR)"
+        print $"Minecraft version: ($env.MC_VERSION)"
 
     - uses: tj-actions/verify-changed-files@v18
       with:
