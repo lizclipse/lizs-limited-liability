@@ -8,37 +8,52 @@ defaults:
   run:
     shell: nu {0}
 
+permissions:
+  contents: write
+
 jobs:
-  build:
+  verify-release:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
     - uses: hustcer/setup-nu@v3.9
 
-    - name: pack
+    - name: Pack
       id: pack
       run: |
         ./packwiz refresh
         ./packwiz modrinth export
+        $"version=(open ./pack.toml | get version)(char nl)" out>> $env.GITHUB_OUTPUT
         $"mc-version=(open ./pack.toml | get versions.minecraft)(char nl)" out>> $env.GITHUB_OUTPUT
 
-    - name: output
+    - name: Output
       env:
-        MC_VERSION: ${{ steps.pack.outputs.mc-version }}
+        version: ${{ steps.pack.outputs.version }}
+        mc_version: ${{ steps.pack.outputs.mc-version }}
       run: |
-        print $"Minecraft version: ($env.MC_VERSION)"
+        print $"Version: ($env.version)"
+        print $"Minecraft version: ($env.mc_version)"
 
     - uses: tj-actions/verify-changed-files@v18
       with:
         fail-if-changed: true
 
-    - uses: butlerlogic/action-autotag@1.1.2
+    - name: Autotag
+      id: autotag
       env:
-        GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-      with:
-        root: ./pack.toml
-        regex_pattern: |
-          version = "^((0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-((?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?)$"
-        tag_prefix: "v"
-        tag_suffix: ""
-        dry_run: true
+        version: ${{ steps.pack.outputs.version }}
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email '88293801+lizclipse@users.noreply.github.com'
+        let version = $"v($env.version)"
+        let tagged = (git -l | lines -s | find $version | is-empty)
+        if not $tagged {
+          print $"pushing tag ($version)"
+        }
+        $"created-tag=(not $tagged)(char nl)" out>> $env.GITHUB_OUTPUT
+
+    - name: test
+      env:
+        created-tag: ${{ steps.autotag.outputs.created-tag }}
+      run: |
+        print $"tagged: ($env.created-tag)"
