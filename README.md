@@ -14,7 +14,8 @@ A modpack with the intent to extend and enhance instead of overhaul.
 This is a non-exhaustive list of mods included in this modpack.
 It is split into categories based on how it affects the game and by how much.
 Not included are things like performance mods, fixes, and libraries.
-For a complete list of mods, see the [source](https://github.com/lizclipse/lizs-limited-liability/).
+For a complete list of mods, you can check out the related version in
+[Modrinth](https://modrinth.com/modpack/lizs-limited-liability/versions).
 
 ### Gameplay
 
@@ -145,16 +146,22 @@ services:
     environment:
       - "EULA=true"
       - "TYPE=quilt"
-      # TODO: use a specific tag
       - "PACKWIZ_URL=https://raw.githubusercontent.com/lizclipse/lizs-limited-liability/v0.1.0/pack.toml"
       - "VERSION=1.20.1"
       - "MAX_MEMORY=5G"
+      - "ENABLE_AUTOPAUSE=true"
+      - "AUTOPAUSE_KNOCK_INTERFACE=tap0"
+      - "MAX_TICK_TIME=-1"
     volumes:
       # attach the relative directory 'data' to the container's /data path
       - "./volumes/mc/l3:/data:Z"
+    restart: always
+    cap_add:
+      - CAP_NET_RAW
+    network_mode: "slirp4netns:port_handler=slirp4netns"
 ```
 
-### Dynmap support
+### Dynmap support (currently broken)
 
 For Dynmap to work, the compose will need a couple of additions:
 
