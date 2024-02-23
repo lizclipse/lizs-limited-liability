@@ -62,7 +62,7 @@ jobs:
       if: ${{ steps.autotag.outputs.created-tag == 'true' }}
       with:
         files: '*.mrpack'
-        tag_name: ${{ steps.pack.outputs.version }}
+        tag_name: v${{ steps.pack.outputs.version }}
 
     - uses: Kir-Antipov/mc-publish@v3.3
       if: ${{ steps.autotag.outputs.created-tag == 'true' }}
@@ -74,4 +74,5 @@ jobs:
 
         modrinth-id: ${{ secrets.MODRINTH_ID }}
         modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
+        loader: quilt
         files: '*.mrpack'
