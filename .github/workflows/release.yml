@@ -63,6 +63,7 @@ jobs:
       with:
         files: '*.mrpack'
         tag_name: v${{ steps.pack.outputs.version }}
+        draft: true
 
     - uses: Kir-Antipov/mc-publish@v3.3
       if: ${{ steps.autotag.outputs.created-tag == 'true' }}
