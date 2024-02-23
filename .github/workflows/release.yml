@@ -74,5 +74,5 @@ jobs:
 
         modrinth-id: ${{ secrets.MODRINTH_ID }}
         modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
-        loader: quilt
+        loaders: quilt
         files: '*.mrpack'
