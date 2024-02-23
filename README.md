@@ -146,7 +146,7 @@ services:
       - "EULA=true"
       - "TYPE=quilt"
       # TODO: use a specific tag
-      - "PACKWIZ_URL=https://github.com/lizclipse/lizs-limited-liability/raw/master/pack.toml"
+      - "PACKWIZ_URL=https://raw.githubusercontent.com/lizclipse/lizs-limited-liability/v0.1.0/pack.toml"
       - "VERSION=1.20.1"
       - "MAX_MEMORY=5G"
     volumes:
