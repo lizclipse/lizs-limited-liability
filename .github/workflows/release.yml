@@ -17,7 +17,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - uses: hustcer/setup-nu@v3.9
-    - run: git fetch --depth=1 origin +refs/tags/*:refs/tags/*
+    - run: try { git fetch --depth=1 origin +refs/tags/*:refs/tags/* }
 
     - name: Pack
       id: pack
