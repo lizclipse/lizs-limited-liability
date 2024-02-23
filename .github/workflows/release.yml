@@ -16,6 +16,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
+      with:
+        fetch-tags: true
     - uses: hustcer/setup-nu@v3.9
 
     - name: Pack
@@ -62,3 +64,15 @@ jobs:
       with:
         files: '*.mrpack'
         tag_name: ${{ steps.pack.outputs.version }}
+
+    - uses: Kir-Antipov/mc-publish@v3.3
+      if: ${{ steps.autotag.outputs.created-tag == 'true' }}
+      with:
+        name: |
+          Liz's Limited Liability
+        version: ${{ steps.pack.outputs.version }}
+        game-versions: ${{ steps.pack.outputs.mc-version }}
+
+        modrinth-id: ${{ secrets.MODRINTH_ID }}
+        modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
+        files: '*.mrpack'
