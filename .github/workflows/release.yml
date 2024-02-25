@@ -76,5 +76,6 @@ jobs:
         modrinth-id: ${{ secrets.MODRINTH_ID }}
         modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
         modrinth-unfeature-mode: any
+        version-type: beta
         loaders: quilt
         files: '*.mrpack'
