@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "README.md"
-hash = "4516e9763a1cdaa00a79694a7bb5f39ab35cd6acdb801fad5123f4075c81b12e"
+hash = "4502f733d881b74e5e3912ab0bf31107a8833cbf4d09995e0d025b7fd0e46d8b"
 
 [[files]]
 file = "config/quilt-loader-overrides.json"
@@ -60,11 +60,6 @@ metafile = true
 [[files]]
 file = "mods/bellsandwhistles.pw.toml"
 hash = "e0939ffb6b7b49dde8f936cd83f6f4881238f71bbdf14afe3b22b364b7e8cfbe"
-metafile = true
-
-[[files]]
-file = "mods/better-combat.pw.toml"
-hash = "dad6de832b60078367a447af1c9197f09fbc6391feaff5c78de8c6bada335c2f"
 metafile = true
 
 [[files]]
@@ -154,7 +149,7 @@ metafile = true
 
 [[files]]
 file = "mods/collective.pw.toml"
-hash = "c45d7509a4d7da384f6bd8f1474a4d8d066ad39b515f96d7a1b1009ca74d568d"
+hash = "cad7747f32756cb82cb59a432e3dee87c94f299d5011d22b2a17a999d9692206"
 metafile = true
 
 [[files]]
@@ -229,7 +224,7 @@ metafile = true
 
 [[files]]
 file = "mods/do-a-barrel-roll.pw.toml"
-hash = "037876c8c736feeb635e957a53464c26cadbde4820c97c000ec69fb72282f095"
+hash = "e1c37b26e735aa64455e06caf8e55023442d44955979c12ecd96c08b754e4c77"
 metafile = true
 
 [[files]]
@@ -384,7 +379,7 @@ metafile = true
 
 [[files]]
 file = "mods/moonlight.pw.toml"
-hash = "dbb67475ad3a0ce5527b566313a224f9be4c2e18a57bfa2c08579a1716c956c2"
+hash = "fb7ce772b49cf568d1563c12af933bbb2823e8863bd7e4dff49063fbc23c1806"
 metafile = true
 
 [[files]]

@@ -1,7 +1,7 @@
 #!/usr/bin/env -S nu -l
 
 export def --wrapped main [...args] {
-  ^$"./vendor/packwiz/packwiz-(os)-64-(arch)(ext)" ...$args
+  ^$"($env.FILE_PWD)/vendor/packwiz/packwiz-(os)-64-(arch)(ext)" ...$args
 }
 
 def arch [] {

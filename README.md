@@ -20,7 +20,6 @@ For a complete list of mods, you can check out the related version in
 ### Gameplay
 
 - [Archers (RPG Series)](https://modrinth.com/mod/QgooUXAJ)
-- [Better Combat](https://modrinth.com/mod/5sy6g3kz)
 - [CC: Tweaked](https://modrinth.com/mod/gu7yAYhd)
   - [CC:C Bridge](https://modrinth.com/mod/fXt291FO)
 - [Create Fabric](https://modrinth.com/mod/Xbc0uyRg)
