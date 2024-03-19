@@ -1,0 +1,13 @@
+name = "Fast Entity Transfer"
+filename = "fastentitytransfer-quilt-1.20.x-1.2.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/inmPbeHN/versions/Gc3yjqR3/fastentitytransfer-quilt-1.20.x-1.2.2.jar"
+hash-format = "sha1"
+hash = "b6df852972c47ee7268a6674565e65f7803a631d"
+
+[update]
+[update.modrinth]
+mod-id = "inmPbeHN"
+version = "Gc3yjqR3"

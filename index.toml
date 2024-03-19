@@ -1,8 +1,12 @@
 hash-format = "sha256"
 
 [[files]]
+file = "LICENSE"
+hash = "fbed9ffa76d58ca544c04f1b8cea632033a72fe64daf7c106f874bc21715113a"
+
+[[files]]
 file = "README.md"
-hash = "4502f733d881b74e5e3912ab0bf31107a8833cbf4d09995e0d025b7fd0e46d8b"
+hash = "82436ac14e86f843973a6e53e879672a2125cff7abe680133bcfea8753c5d7ab"
 
 [[files]]
 file = "config/quilt-loader-overrides.json"
@@ -80,6 +84,11 @@ metafile = true
 [[files]]
 file = "mods/better-third-person.pw.toml"
 hash = "9c44cf229440021ac7c42cd265fcec944fb002e2264c61688dfc21546bdaed5d"
+metafile = true
+
+[[files]]
+file = "mods/betterdays.pw.toml"
+hash = "e026344600d5b17f5ae8475bee893b897e5bc16988af6fb6fd81f35eafc87665"
 metafile = true
 
 [[files]]
@@ -280,6 +289,11 @@ metafile = true
 [[files]]
 file = "mods/fastback.pw.toml"
 hash = "27058ff24b894fe8d1157017c13db4bb5f4953d9a89a76b7ba0ad9d1723f4d19"
+metafile = true
+
+[[files]]
+file = "mods/fastentitytransfer.pw.toml"
+hash = "3a15c391dac33f2ad9013b78ea972ea502f7064cd295c91c9393700bbdbd6c5a"
 metafile = true
 
 [[files]]
@@ -538,11 +552,6 @@ hash = "6e7935c76a45706a39374f06287e7e4da0e81c6911c04c8257c748a7b8294edc"
 metafile = true
 
 [[files]]
-file = "mods/sleep-warp.pw.toml"
-hash = "624b26b1f2def748fab13e6b56f8ea8bab8cbe25c4a01f237437e6da4fe4ed88"
-metafile = true
-
-[[files]]
 file = "mods/sodium.pw.toml"
 hash = "cd49906a91e2ff1c11acba79192d609c232f2f73d82cc6a646e7338c8e76aa8a"
 metafile = true
@@ -608,8 +617,18 @@ hash = "64254c688cb5b7e22ef17a129f9b7469899e14a322580e2a7988f4e5b75397f2"
 metafile = true
 
 [[files]]
+file = "mods/unloaded-activity.pw.toml"
+hash = "d7d0855a260bdad210b3ec58246ff5686ba4e12d03c441dd67653bea4c2e309b"
+metafile = true
+
+[[files]]
 file = "mods/useful-slime.pw.toml"
 hash = "d294fb57b0e6b7790678749357fea36e54ba3276749f78695c3d8fb1ebda3fff"
+metafile = true
+
+[[files]]
+file = "mods/vivecraft.pw.toml"
+hash = "cb5b3f2ac7b2f850a13ef6b39f7a46dfd5207d3828e337f3129efa33cffb6713"
 metafile = true
 
 [[files]]

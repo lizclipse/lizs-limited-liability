@@ -2,6 +2,12 @@
 
 A modpack with the intent to extend and enhance instead of overhaul.
 
+Note for Steam Deck: You will may to manually disable `Vivecraft`.
+Since this modpack is mostly for me and my own, I've added that mod so I can
+play in VR with others being able to see me, but, from testing, I've found that
+it can crashes the game on Steam Deck for some reason.
+I'll open an issue at some point if it reoccurs, but for now this is the only caveat.
+
 ## Goals
 
 - Lightweight
@@ -45,6 +51,7 @@ For a complete list of mods, you can check out the related version in
 - [Additional Additions](https://modrinth.com/mod/R4TvILfj)
 - [Areas](https://modrinth.com/mod/NWvsqJ2Z)
 - [Create: Bells & Whistles](https://modrinth.com/mod/gJ5afkVv)
+- [Better Days](https://modrinth.com/mod/betterdays)
 - [Better Than Mending](https://modrinth.com/mod/Lvv4SHrK)
 - [Better Third Person](https://modrinth.com/mod/G1s2WpNo)
 - [Bits And Chisels](https://modrinth.com/mod/q8MC5tW2)
@@ -73,12 +80,12 @@ For a complete list of mods, you can check out the related version in
 - [Presence Footsteps](https://modrinth.com/mod/rcTfTZr3)
 - [Realistic Bees](https://modrinth.com/mod/tG6HkcWx)
 - [Replanting Crops](https://modrinth.com/mod/EXzIPtJo)
-- [SleepWarp](https://modrinth.com/mod/OPvzuqtZ)
 - [Spawn Animations](https://modrinth.com/mod/zrzYrlm0)
 - [Spyglass Improvements](https://modrinth.com/mod/Z6ykjRlM)
 - [Traveler's Backpack](https://modrinth.com/mod/rlloIFEV)
 - [Tree Harvester](https://modrinth.com/mod/abooMhox)
 - [Useful Slime](https://modrinth.com/mod/CzM6C1W0)
+- [Vivecraft](https://modrinth.com/mod/vivecraft)
 
 ### Tweaks
 
@@ -110,9 +117,11 @@ For a complete list of mods, you can check out the related version in
 - [Create Support for Open Parties and Claims](https://modrinth.com/mod/T4Cv5iZq)
 - [Simple Voice Chat Enhanced Groups](https://modrinth.com/mod/1LE7mid6)
 - [Fast Backups](https://modrinth.com/mod/ZHKrK8Rp)
+- [Fast Entity Transfer](https://modrinth.com/mod/fastentitytransfer)
 - [Open Parties and Claims](https://modrinth.com/mod/gF3BGWvG)
 - [Ping Wheel](https://modrinth.com/mod/QQXAdCzh)
 - [Simple Voice Chat](https://modrinth.com/mod/9eGKb6K1)
+- [Unloaded Activity](https://modrinth.com/mod/unloaded-activity)
 - [Voice Chat Interaction](https://modrinth.com/mod/qsSP2ZZ0)
 - [XaeroPlus](https://modrinth.com/mod/EnPUzSTg)
 - [Xaero's Map Chest Tracker Integration](https://modrinth.com/mod/XhOTBzVR)
