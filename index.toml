@@ -6,7 +6,7 @@ hash = "fbed9ffa76d58ca544c04f1b8cea632033a72fe64daf7c106f874bc21715113a"
 
 [[files]]
 file = "README.md"
-hash = "872dbff54113e4a1a78c9e1071297dca56d656c43d3ebd6ec00323f90c95dfca"
+hash = "61a9ee1df33eebfe42022d99a65e67a923937571d10d3a9b0209494bce078646"
 
 [[files]]
 file = "config/quilt-loader-overrides.json"

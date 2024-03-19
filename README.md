@@ -2,7 +2,7 @@
 
 A modpack with the intent to extend and enhance instead of overhaul.
 
-Note for Steam Deck: You will may to manually disable `Vivecraft`.
+Note for Steam Deck: You may need to manually disable `Vivecraft`.
 Since this modpack is mostly for me and my own, I've added that mod so I can
 play in VR with others being able to see me, but, from testing, I've found that
 it can crashes the game on Steam Deck for some reason.
@@ -154,7 +154,7 @@ services:
     environment:
       - "EULA=true"
       - "TYPE=quilt"
-      - "PACKWIZ_URL=https://raw.githubusercontent.com/lizclipse/lizs-limited-liability/v0.1.0/pack.toml"
+      - "PACKWIZ_URL=https://raw.githubusercontent.com/lizclipse/lizs-limited-liability/v0.4.0/pack.toml"
       - "VERSION=1.20.1"
       - "MAX_MEMORY=5G"
       - "ENABLE_AUTOPAUSE=true"
