@@ -1,6 +1,6 @@
 name = "Lizs Limited Liability"
 author = "lizclipse"
-version = "0.3.0"
+version = "0.4.0"
 pack-format = "packwiz:1.1.0"
 
 [index]
@@ -10,4 +10,4 @@ hash = "fe428c2eb5c23403ad7007a5cdfbeaa456a503f7ab01b8d646fca9cc11105543"
 
 [versions]
 minecraft = "1.20.1"
-quilt = "0.24.0-beta.8"
+quilt = "0.24.0"
