@@ -72,6 +72,7 @@ For a complete list of mods, you can check out the related version in
 - [Immersive Paintings](https://modrinth.com/mod/6txNkua3)
 - [ImmersiveThunder](https://modrinth.com/mod/uKjKoMsj)
 - [LambDynamicLights](https://modrinth.com/mod/yBW8D80W)
+- [Lighty](https://modrinth.com/mod/lighty)
 - [Lootr](https://modrinth.com/mod/EltpO5cN)
 - [Muffin's Slime Golem](https://modrinth.com/mod/hI3Tmydh)
 - [MmmMmmMmmMmm](https://modrinth.com/mod/Adega8YN)
