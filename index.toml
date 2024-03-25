@@ -428,7 +428,7 @@ metafile = true
 
 [[files]]
 file = "mods/multiplayer-server-pause.pw.toml"
-hash = "a6de951e4d89d37e73f5f71d24ef28cea7f36e5317b1ad5df86d4879849e8e52"
+hash = "1f34b12774013bd69dbea5a1f6c0eab39d470e5d1f1a8280c838f5880fe0b536"
 metafile = true
 
 [[files]]
