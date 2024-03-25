@@ -173,7 +173,7 @@ metafile = true
 
 [[files]]
 file = "mods/completeconfig.pw.toml"
-hash = "2b880a4be1a624e956fafaea89834828c58b0c512e611e6746c3fb8d9e93b260"
+hash = "47debdfb6f09a8dce92d6d1f02470f35bc94d9589305e28f36ea837efea09e5e"
 metafile = true
 
 [[files]]

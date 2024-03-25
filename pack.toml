@@ -1,12 +1,12 @@
 name = "Lizs Limited Liability"
 author = "lizclipse"
-version = "0.6.1"
+version = "0.6.2"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "75b7a45002751242eca196aa7ceca41b95884142297d2f67874f0a524e17cd6f"
+hash = "4dc2e617a491ef02edfe69ef9c29e5c742df7b774a7557c6c44a0923d22cb358"
 
 [versions]
 minecraft = "1.20.1"
