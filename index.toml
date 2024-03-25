@@ -6,7 +6,7 @@ hash = "fbed9ffa76d58ca544c04f1b8cea632033a72fe64daf7c106f874bc21715113a"
 
 [[files]]
 file = "README.md"
-hash = "4efe768f8728e3df19f8d6fa1dc9a68b84dd352929a9a793ed30744830d2a6c1"
+hash = "d4486280b1fa713512b647681f9084d59e976311f5531c25ab03e205f9dfdfb5"
 
 [[files]]
 file = "config/quilt-loader-overrides.json"
@@ -169,6 +169,11 @@ metafile = true
 [[files]]
 file = "mods/compact-help-command.pw.toml"
 hash = "1a42178676e9ed0a7e088185877e6843cfae928bc3fbeeff2afdfb38cd03d158"
+metafile = true
+
+[[files]]
+file = "mods/completeconfig.pw.toml"
+hash = "2b880a4be1a624e956fafaea89834828c58b0c512e611e6746c3fb8d9e93b260"
 metafile = true
 
 [[files]]
@@ -419,6 +424,11 @@ metafile = true
 [[files]]
 file = "mods/muffins-slime-golem.pw.toml"
 hash = "ee3b2e247b0167a036e066e65295ab6a4292446cee4f3cacb20b7d0f64c40e0e"
+metafile = true
+
+[[files]]
+file = "mods/multiplayer-server-pause.pw.toml"
+hash = "a6de951e4d89d37e73f5f71d24ef28cea7f36e5317b1ad5df86d4879849e8e52"
 metafile = true
 
 [[files]]

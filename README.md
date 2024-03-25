@@ -155,11 +155,9 @@ services:
     environment:
       - "EULA=true"
       - "TYPE=quilt"
-      - "PACKWIZ_URL=https://raw.githubusercontent.com/lizclipse/lizs-limited-liability/v0.5.0/pack.toml"
+      - "PACKWIZ_URL=https://raw.githubusercontent.com/lizclipse/lizs-limited-liability/v0.6.0/pack.toml"
       - "VERSION=1.20.1"
-      - "MAX_MEMORY=5G"
-      - "ENABLE_AUTOPAUSE=true"
-      - "AUTOPAUSE_KNOCK_INTERFACE=tap0"
+      - "MAX_MEMORY=8G"
       - "MAX_TICK_TIME=-1"
     volumes:
       # attach the relative directory 'data' to the container's /data path
