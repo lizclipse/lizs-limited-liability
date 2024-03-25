@@ -119,6 +119,7 @@ For a complete list of mods, you can check out the related version in
 - [Simple Voice Chat Enhanced Groups](https://modrinth.com/mod/1LE7mid6)
 - [Fast Backups](https://modrinth.com/mod/ZHKrK8Rp)
 - [Fast Entity Transfer](https://modrinth.com/mod/fastentitytransfer)
+- [Multiplayer Server Pause](https://modrinth.com/mod/multiplayer-server-pause)
 - [Open Parties and Claims](https://modrinth.com/mod/gF3BGWvG)
 - [Ping Wheel](https://modrinth.com/mod/QQXAdCzh)
 - [Simple Voice Chat](https://modrinth.com/mod/9eGKb6K1)
