@@ -162,11 +162,8 @@ services:
       - "MAX_TICK_TIME=-1"
     volumes:
       # attach the relative directory 'data' to the container's /data path
-      - "./volumes/mc/l3:/data:Z"
+      - "./volumes/mc/l3:/data"
     restart: always
-    cap_add:
-      - CAP_NET_RAW
-    network_mode: "slirp4netns:port_handler=slirp4netns"
 ```
 
 ### Dynmap support (currently broken)
